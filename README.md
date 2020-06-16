@@ -19,7 +19,8 @@ You will need to make the following classes:
 ### Product
 
 Here are the methods and attributes your `Product` class should contain:
-
+- 	`#__init__(name = '', price = 0.0, ID = None)`
+	: Recommended `__init__` function.
 -   `#name`
     : The Name of the product.  
     -> `String`
@@ -27,7 +28,7 @@ Here are the methods and attributes your `Product` class should contain:
     : A description of the product.  
     -> `String`
 -   `#ID`
-    : A Unique ID that for each `Product` item.  
+    : A Unique ID that for each `Product` item.
     -> `String` or `Integer`. Your choice.
 -   `#price`
     : How much the product costs.  
@@ -101,6 +102,9 @@ Here are the methods and attributes your `Shop` class should contain:
     : Adds `Quantity` of `Product` to the `Client`'s `Cart`.  
     -> `True` on success.  
     -> `ValueError` if `Shop` doesn't have enough `Product` in stock.
+-	`#add_stock(Product, Quantity)`
+	: Adds `Quantity` of `Product` to shops.  
+	-> `True` or `ValueError` if ID conflict.
 
 
 ## Testing
