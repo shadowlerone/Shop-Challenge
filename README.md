@@ -101,3 +101,32 @@ Here are the methods and attributes your `Shop` class should contain:
     : Adds `Quantity` of `Product` to the `Client`'s `Cart`.  
     -> `True` on success.  
     -> `ValueError` if `Shop` doesn't have enough `Product` in stock.
+
+
+## Testing
+
+Add these to the end of your file.
+
+### Testing Product
+```
+
+
+
+```
+### Testing Cart
+```
+
+
+```
+### Testing Shop
+```
+
+
+
+```
+### Testing Client
+```
+
+
+
+```
