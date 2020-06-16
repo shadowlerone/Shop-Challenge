@@ -6,8 +6,7 @@ class Client(object):
 
 	def checkout(self):
 		if self.cart.total() > self.wallet:
-			raise AttributeError
-
+			raise ValueError
 		self.cart.empty()
 		return True
 
