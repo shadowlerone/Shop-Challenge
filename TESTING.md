@@ -35,7 +35,7 @@ try:
 	shop.add_product(apple, 10, ID = '12345')
 except ValueError:
 	print("Success!")
-else
+else:
 	print("ID conflict not handled properly")
 ```
 
