@@ -38,11 +38,17 @@ except ValueError:
 else:
 	print("ID conflict not handled properly")
 ```
+### Client ID conflicts
+```py
+from client import Client
+from shop import Shop
 
-
-## Testing Client
-```
-
-
-
+shop = Shop()
+shop.add_client()
+try:
+	shop.add_client()
+except ValueError:
+	print('Success!')
+else:
+	print("ID conflict not handled properly")
 ```
