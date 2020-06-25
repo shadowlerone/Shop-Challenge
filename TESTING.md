@@ -17,9 +17,18 @@ print("Success!")
 
 
 ## Testing Cart
-```
-
-
+### Cart Contents
+```py
+from cart import Cart
+from product import Product
+c = Cart()
+assert c.content == {}, "Cart Content at initialization should be empty Dict"
+try:
+	c.remove(Product(name = 'banana', price = 12.5), 1)
+except ValueError:
+	print("Successfully handled remove error.")
+else:
+	print("Didn't handle remove Product that doesn't exist.")
 ```
 
 
@@ -28,6 +37,7 @@ print("Success!")
 ```py
 from product import Product
 from shop import Shop
+shop = Shop()
 banana = Product(name = 'banana', price = 12.5)
 apple = Product(name = 'apple', price = 12.5)
 shop.add_product(banana, 10, ID = '12345')

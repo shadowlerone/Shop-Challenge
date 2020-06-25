@@ -20,7 +20,7 @@ You will need to make the following classes:
 
 Here are the methods and attributes your `Product` class should contain:
 - 	`#__init__(name = '', price = 0.0, ID = None)`
-	: Recommended `__init__` function.
+	: Recommended `__init__` function parameters.
 -   `#name`
     : The Name of the product.  
     -> `String`
@@ -49,7 +49,7 @@ Here are the methods and attributes your `Product` class should contain:
     -> `Float` or `Double`
 -   `#add(Product, Quantity)`
     : Adds `Quantity` of `Product` to the `Cart`.  
-    -> `nil`
+    -> `True`
 -   `#remove(Product, Quantity)`
     : Removes `Quantity` of `Product` from the `Cart`.
     -> `True` if succesful.
