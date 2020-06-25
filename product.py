@@ -1,6 +1,6 @@
 import warnings as w
-
-class Product(object):
+from entity import Entity
+class Product(Entity):
 	def __init__(self, name = '', price = 0.0, ID = None):
 		if price < 0:
 			raise ValueError("Price is negative.")
@@ -12,3 +12,6 @@ class Product(object):
 		self.price = price
 		if ID == None:
 			w.warn("Generating ID")
+			self.ID = self.generate_ID()
+		else:
+			self.ID = ID
