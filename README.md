@@ -19,7 +19,7 @@ You will need to make the following classes:
 ### Product
 
 Here are the methods and attributes your `Product` class should contain:
-- 	`#__init__(name = '', price = 0.0, ID = None)`
+- 	`#__init__(name = '', price = 0.0, desc = '', ID = None)`
 	: Recommended `__init__` function parameters.
 -   `#name`
     : The Name of the product.  
