@@ -38,7 +38,7 @@ Here are the methods and attributes your `Product` class should contain:
 
 -   `#content`
     : What is in the cart.  
-    -> `{Product => Quantity(Integer)}`
+    -> `{Product.ID => [Product, Quantity(Integer)]}`
 
 -   `#total_price()`
     : The total checkout price of the cart.  
@@ -84,7 +84,7 @@ Here are the methods and attributes your `Shop` class should contain:
 
 -   `#stock`
     : The Shop's stock.  
-    -> `{Product => Quantity(Integer)}`
+    -> `{Product.ID => [Product, Quantity(Integer)]}`
 -   `#clients`
     : The people in the shop.  
     -> `{CliendID => Client}`
